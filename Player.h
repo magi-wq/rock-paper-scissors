@@ -1,8 +1,15 @@
-//
-// Created by maxwo on 19.12.2025.
-//
-
-#ifndef ROCK_PAPER_SCISSORS_PLAYER_H
-#define ROCK_PAPER_SCISSORS_PLAYER_H
-
-#endif //ROCK_PAPER_SCISSORS_PLAYER_H
+#ifndef PLAYER_H
+#define PLAYER_H
+#include <string>
+class Player {
+private:
+    std::string name;
+    int score;
+public:
+    Player(const std::string& playerName);
+    std::string getName() const;
+    int getScore() const;
+    void incrementScore();
+    int makeChoice() const;
+};
+#endif

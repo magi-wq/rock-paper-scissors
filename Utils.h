@@ -1,8 +1,9 @@
-//
-// Created by maxwo on 19.12.2025.
-//
-
-#ifndef ROCK_PAPER_SCISSORS_UTILS_H
-#define ROCK_PAPER_SCISSORS_UTILS_H
-
-#endif //ROCK_PAPER_SCISSORS_UTILS_H
+#ifndef UTILS_H
+#define UTILS_H
+#include <string>
+namespace Utils {
+    void clearScreen();
+    void printHeader();
+    std::string choiceToString(int choice);
+}
+#endif
